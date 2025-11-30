@@ -1,0 +1,222 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 59px;
+    height: 80px;
+    align-items: center;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 666px;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    padding: 10px;
+
+}
+
+/* index page */
+.title {
+    text-align: center;
+
+}
+
+/* about page */
+.description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.description .avatar img {
+    border-radius: 60%;
+    width: 100%;
+
+
+
+}
+
+
+
+
+.description .text p {
+    font-size: large;
+    text-align: left;
+}
+
+.key-skills {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+
+
+
+
+}
+
+.key-skills .skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.key-skills .skills-list li {
+    border: 2px solid white;
+    padding: 3px;
+
+}
+
+/* contact-page */
+.contact-container {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-container h1 {
+    text-align: center;
+
+}
+
+.contact-info {
+    display: flex;
+    border: 2px solid;
+    padding: 20px;
+    margin: 50px;
+
+
+
+
+
+}
+
+.contact-info input[type=text] {
+    background-color: white;
+    border: none;
+    width: 100%;
+    margin: 12px 0px;
+    padding: 10px;
+
+}
+
+.contact-info textarea {
+    background-color: white;
+    max-height: max-content;
+    border: none;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+
+}
+
+.contact-info input[type=submit] {
+    font-size: large;
+    border: none;
+    width: 100%;
+    margin: 12px 0px;
+    padding: 10px;
+}
+
+.contact-info ul li {
+    list-style-type: none;
+    font-size: large;
+}
+
+.reserved {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* projectp-page */
+.Project-container h1 {
+    text-align: center;
+
+}
+
+.Project-container p {
+    font-size: xx-large;
+}
+
+.Project-container .Project-info {
+
+    padding: 15px 0px;
+    margin: 7px;
+
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .description .text h1 {
+        font-size: 20px;
+
+    }
+}
+
+
+@media (max-width: 750px) {
+    .description {
+        flex-direction: column-reverse;
+
+    }
+
+    .description .avatar img {
+        width: 250px;
+    }
+
+    .key-skills .skills-list {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .description .text h1 {
+        font-size: 20px;
+
+    }
+
+    .description .text p {
+        font-size: 10px;
+    }
+
+    .key-skills h2 {
+        font-size: 20px;
+
+    }
+
+    .key-skills .skills-list li {
+        font-size: 10px;
+    }
+}
